@@ -1,0 +1,264 @@
+* {
+    box-sizing: border-box;
+}
+
+h3 {
+	display: inline-block;
+	margin: 0;
+	width: 150px;
+	text-align: center;
+    
+}
+
+h3:hover{
+    color: #e63d00;
+}
+
+button{
+border: none;
+background-color: #ff7c4d;
+color: white;
+font-weight: bold;
+border-radius: 5%;
+padding: 5px 10px;
+}
+
+button#addEvent:hover{
+    background-color: #e63d00;
+}
+
+button#next:hover, button#previous:hover{
+    background-color: #e63d00;
+}
+li{
+    margin-bottom: 20px;
+}
+li:hover, div.eks:hover{
+    font-weight: bold;
+}
+.highlight{
+	border: 3px solid #ff7c4d;
+	border-radius: 10px;
+}
+
+td, th, #previous, #next{
+	 text-align: center;
+	 padding: 3px;
+	 outline: none;
+}
+
+
+
+.gray{
+	color: lightgray;
+}
+
+#wrap button{
+
+	background-color: #ff7c4d; 
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    display: inline-block;
+    font-size: 15px;
+    border-radius: 25%;
+    font-weight: bold;
+
+
+}
+
+#wrap{
+
+	width: 200px;
+	display: inline-block;
+	float: left;
+	margin: 10px;
+
+}
+
+table{
+	margin: auto;
+
+}
+
+#events{
+	width: 200px;
+	display: inline-block;
+	float: left;
+}
+
+#events ul{
+	margin: 0;
+	padding: 0;
+
+}
+#events ul li{
+	cursor: pointer;
+}
+li {
+list-style: none;
+}
+
+
+.highlightEvent{
+
+border: 3px solid red;
+	border-radius: 10px;
+}
+
+body{
+	margin: 0;
+}
+
+.pointer{
+	cursor: pointer;
+}
+
+.background{
+
+	background-color: rgba(0,0,0,0.8);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	display: none;
+}
+
+#window{
+	
+width: 50%;
+height: 33%;
+position: absolute;
+top: 25%;
+left:25%;
+background:#fff;
+z-index: 2; 
+
+}
+
+#year-input{
+	width: 33%;
+	display: inline-block;
+	
+}
+
+#year-input input{
+	width: 50px;
+	
+}
+
+
+#window-content{
+	margin: auto;
+	width: 66%;
+	top: 33%;
+	position: relative;
+	display: none;
+
+}
+
+#window-content-2{
+	margin: auto;
+	width: 83%;
+	top: 33%;
+	position: relative;
+	display: none;
+
+}
+
+
+#window-content-2 #input-wrap input{
+	display: inline-block;
+}
+
+#btnwrap{
+    display: inline;
+	float: right;
+	
+}
+
+#btnwrap >*{
+	
+}
+
+#input-wrap{
+	
+}
+
+#input-wrap >*{
+	margin-right: 5px;
+}
+
+input#input-day, input#input-year{
+    width: 50px;
+}
+
+#okay{
+	width: 56px;
+}
+
+/*11022019*/
+
+#jump{
+	color: #ff7c4d;
+	font-weight: bold;
+	cursor: pointer;
+	
+}
+
+#jump:hover{
+    color: #e63d00; 
+}
+
+
+.eks{
+ text-align: right;
+ margin: 0;
+ color: red;
+ text-decoration: bold;
+ cursor: pointer;
+ width: 20px;
+ float: right;
+}
+
+#wrap-right{
+	width: 200px;
+	margin: 10px;
+	float: left;
+	display: inline-block;
+}
+
+@media only screen and (max-width: 1240px){
+    #btnwrap{
+        display: block;
+        margin-top: 10px;
+        float: left;
+        position: absolute;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+
+	
+	#window-content-2 #btnwrap button, #okay, #cancel, #input-wrap, #btnwrap, #year-input, #input-wrap select{
+		margin: 0;
+		width: 100%; 
+	}
+
+	#window{
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		display: block;
+	}
+
+    #window-content-2 #btnwrap button, #window-content #btnwrap button{
+        border-radius: 0px;
+        border: 1px solid black;
+    }
+	
+    #window-content-2 #input-wrap > *, #window-content #input-wrap #year-input input{
+        width: 100%;
+    }
+}
